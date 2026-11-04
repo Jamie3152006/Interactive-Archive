@@ -1,0 +1,76 @@
+
+body.no-scroll,
+html.no-scroll {
+  overflow: hidden;
+  height: 100%;
+}
+
+#root {
+  height: 100%;
+}
+
+.body{
+  position: relative;
+  padding: 0px;
+  margin: 0px;
+  width: 100vw;
+  height: 100vh; 
+  overflow: hidden;
+  background-color: rgb(51, 62, 64);
+}
+
+
+.photo-layer {
+  position: absolute;
+  z-index: 1;
+  top: 10%;          
+  left: 15%;
+  width: 40%;
+  aspect-ratio: 1 / 1; 
+  overflow: hidden;
+}
+
+.photo-layer .scroll-img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
+  transform:scale(0.8);
+}
+
+.folder-layer {
+  position: absolute;
+  z-index: 2;         
+  top: -19%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  height: auto;
+  pointer-events: none;
+}
+
+.button-link{
+    position: absolute;
+    top: 500px;
+    left: 308px;
+    z-index: 3;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    color: rgb(68, 56, 46);
+}
+
+.button-link:hover {
+    transform: scale(1.3);
+    color: dodgerblue;
+}
+
+.sticky-note{
+    position: absolute;
+    left: 45vw;
+    top: 30vh;
+    z-index: 7;
+    transform: scale(1.8);
+}

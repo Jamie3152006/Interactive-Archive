@@ -1,0 +1,139 @@
+@font-face {
+    font-family: 'erratic-cursive';
+    src: url('../assets/erratic-cursive/ErraticCursive-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+.homemade-apple-regular {
+  font-family: "Homemade Apple", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.sky-box {
+  position: absolute;
+  top: 5vh;         
+  left: 0;
+  width: 100%;
+  height: 95vh;
+  pointer-events: none;
+  z-index: 5;
+  background-color: rgb(20, 58, 78);
+  overflow: hidden;
+}
+
+.plane {
+  position: absolute;
+  pointer-events: auto;
+  top: 0;
+  left: 0;
+  width: 100px;
+  z-index: 5;
+  cursor: pointer;
+  animation: fly var(--dur) ease-in-out var(--delay) infinite;
+}
+
+@keyframes fly {
+  0%   { transform: translate(var(--x0), var(--y0)); }
+  20%  { transform: translate(var(--x1), var(--y1)); }
+  40%  { transform: translate(var(--x2), var(--y2)); }
+  60%  { transform: translate(var(--x3), var(--y3)); }
+  80%  { transform: translate(var(--x4), var(--y4)); }
+  100% { transform: translate(var(--x0), var(--y0)); }  
+}
+
+.plane-1 { top: 0;   animation-delay: 0s; }
+.plane-2 { top: 10vh; animation-delay: -4s;  animation-duration: 25s; }
+.plane-3 { top: 20vh; animation-delay: -8s;  animation-duration: 18s; }
+.plane-4 { top: -10vh; animation-delay: -12s; animation-duration: 30s; }
+.plane-5 { top: 30vh; animation-delay: -16s; animation-duration: 22s; }
+
+.connections {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 6;
+  pointer-events: none;  
+}
+
+.connections line {
+  stroke: rgb(221, 34, 34);
+  stroke-width: 2;
+  stroke-dasharray: 16 3;  
+}
+
+.pinned {
+  position: absolute;
+  z-index: 6;
+  max-width: 160px;        
+  max-height: 160px;
+  width: auto;
+  height: auto;
+  transform: translate(-50%, -50%);   /* centers the image */
+  animation: pop 0.3s ease-out;
+  cursor: pointer; 
+}
+
+.lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.75);
+}
+
+.lightbox-card {
+  position: relative;
+  line-height: 0;           
+}
+
+.lightbox-card img {
+  max-width: 80vw;
+  max-height: 80vh;
+  display: block;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.excerpt {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 0;
+  padding: 16px 20px;
+  line-height: 1.4;
+  font-family: 'erratic-cursive';
+  font-size: 2rem;
+  color: white;
+  text-shadow: 1px 1px 6px black;
+}
+
+@keyframes pop {
+  from { transform: scale(0.3); opacity: 0; }
+  to   { transform: scale(1);   opacity: 1; }
+}
+
+.plane-layer { 
+    position: absolute; 
+    inset: 0; 
+}
+
+.cutout-btn {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 7;
+  padding: 12px 24px;
+  font-size: 1rem;
+  cursor: pointer;
+  background-color:dodgerblue;
+  color: rgb(38, 55, 74);
+  border: 0;
+}

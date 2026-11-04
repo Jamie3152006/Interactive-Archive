@@ -1,0 +1,32 @@
+header{
+    padding-left: 3%;
+}
+
+.archive-title{
+    font-size: 50px;
+    color: rgb(38, 55, 74);
+}
+
+.subtext{
+    width: 50%;
+    text-align: justify;
+    color: rgb(101, 99, 97);
+}
+
+.archive-body{
+    position: relative;
+    min-height: 150vh;
+}
+
+.main-content{
+    position: absolute;    
+    top: 45vh;              
+    left: 1vw;
+    width: 97%;
+    height: 95vh;   
+    overflow: hidden;
+}
+
+body{
+    background-color: rgb(223, 213, 195);
+}
