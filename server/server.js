@@ -9,6 +9,10 @@ const server = createServer(app);
 const io = new Server(server, { cors: {origin: '*'}});
 const PORT = process.env.PORT || 3000;
 
+io.on("connection", (socket) => {
+    console.log("user connected");
+  });
+
 server.listen(PORT, () => {
   console.log(`Server running on ${PORT}`);
 });
