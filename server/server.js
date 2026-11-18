@@ -11,6 +11,18 @@ const PORT = process.env.PORT || 3000;
 
 io.on("connection", (socket) => {
     console.log("user connected");
+
+
+    io.emit("users", io.engine.clientsCount);
+
+    socket.on("getUsers", () => {
+        io.emit("users", io.engine.clientsCount);
+    });
+
+    socket.on("disconnect", () => {
+    io.emit("users", io.engine.clientsCount); // someone left
+    });
+    
   });
 
 server.listen(PORT, () => {
