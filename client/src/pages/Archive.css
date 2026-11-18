@@ -30,3 +30,7 @@ header{
 body{
     background-color: rgb(223, 213, 195);
 }
+
+#journal {
+    margin-left: 3%;
+}

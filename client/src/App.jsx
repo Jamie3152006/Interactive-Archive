@@ -4,6 +4,7 @@ import noScroll from './utils/noScroll.js'
 import Homepage from './pages/Homepage.jsx'
 import Archive from './pages/Archive.jsx'
 import FinalPage from './pages/FinalPage.jsx';
+import Journal from './pages/Journal.jsx';
 
 function App() {
 
@@ -12,6 +13,7 @@ function App() {
     <Routes>
       <Route path="/" element={<Homepage />}/>
       <Route path="/archive" element={<Archive />}/>
+      <Route path='/journal' element={<Journal />}/>
       <Route path="/final_page" element={<FinalPage />} />
     </Routes>
     </>

@@ -34,7 +34,7 @@ h2, h3, a, p, .cutout-btn {
   font-size: 20px;
 }
 
-#home{
+#home, #journal{
     color: dodgerblue;
     text-decoration: none;
     z-index: 9;
