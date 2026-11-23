@@ -43,7 +43,7 @@
 }
 
 
-#home-btn {
+#home-btn, #archive-btn {
   position: absolute;
   top: 60px;
   left: 92%;
@@ -56,7 +56,13 @@
   transition: all ease 0.3s;
 }
 
-#home-btn:hover{
+#archive-btn{
+  margin-top: 5%;
+  padding: 10px 30px;
+}
+
+#home-btn:hover,
+#archive-btn:hover{
     color: dodgerblue;
 }
 

@@ -18,8 +18,8 @@ export default function FinalPage() {
         <p>Absence and Distortion of Memories...</p>
         <p>As years pass, there is going to be gaps and blanks in our memories, they blur together and create spaces that longed to remember and be filled, but memories can only be maintained for so long, they are in their very essence temporal and ephemeral.</p>
       </div>
-
       <Link to="/" id="home-btn">Homepage</Link>
+      <Link to="/archive" id="archive-btn">Archive</Link>
     </div>
   );
 }

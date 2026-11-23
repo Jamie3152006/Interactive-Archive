@@ -28,13 +28,13 @@ html, body {
   font-family: "Questrial", sans-serif;
 }
 
-h2, h3, a, p, .cutout-btn {
+h2, h3, a, p, .cutout-btn, .archive-btn {
   font-family: "Bentham", serif;
   font-weight: 200;
   font-size: 20px;
 }
 
-#home, #journal{
+#home, #journal, #interaction{
     color: dodgerblue;
     text-decoration: none;
     z-index: 9;

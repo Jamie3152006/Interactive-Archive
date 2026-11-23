@@ -16,7 +16,7 @@ function Homepage(){
             <div className = 'button'>
                 <Link to="/archive" className="button-link">Enter Archive</Link>
             </div>
-            <img src="../images/Sticky-Note.png" className='sticky-note'alt="sticky note clip image with title of 'Recollection of Memories Through Photos by Jamie Zheng" />
+            <img src="../images/Sticky-Note.svg" className='sticky-note'alt="sticky note clip image with title of 'Recollection of Memories Through Photos by Jamie Zheng" />
         </div>
         </>
     )

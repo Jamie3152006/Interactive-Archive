@@ -51,9 +51,14 @@ function Journal(){
     return(
         <>
         <header>
-            <h1 className='title'>Journal Entries from Others</h1>
+            <div className='header-grid'>
+                <h1 className='title'>Journal Entries from Others —</h1>
+                <h2 id='title-description'>Share Your Own Personal Memories</h2>
+                <Link to="/archive" id='archive'>Archive</Link>
+            </div>
             <p>🟢 {userCount} online</p>
-            <p id='disclaimer'>*All Fields Must be Filled to Post</p>
+            <p className='disclaimer'>*All Fields Must be Filled to Post</p>
+            <p className='disclaimer'>*Only Allows Photos that are Under 5MB</p>
         </header>
         <form className='entry-form' onSubmit={handleSubmit}>
             <input 

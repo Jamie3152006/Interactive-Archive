@@ -77,6 +77,7 @@
     gap: 12px;
     padding: 16px;
     margin-left: 2%;
+    font-family: "Bentham", serif;;
 
 }
 
@@ -120,4 +121,44 @@
 
 .delete-btn:hover{
     background-color: #555;
+}
+
+.disclaimer{
+    font-size: 18px;
+    color: rgb(96, 80, 56);
+}
+
+.header-grid{
+    display: flex;
+    gap: 1%;
+}
+
+#title-description{
+    font-size: 27px;
+    align-self: center;
+    color: rgb(85, 134, 183);
+}
+
+.title{
+    font-size: 40px;
+    color: rgb(38, 55, 74);
+}
+
+#archive{
+    align-self: center;
+    margin-left: 23%;
+    text-decoration: none;
+    font-size: 25px;
+    color: rgb(93, 92, 84);
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+#archive:hover{
+    color: dodgerblue;
+    transform: scale(1.2);
+}
+
+header{
+    margin-left: 3%;
 }
